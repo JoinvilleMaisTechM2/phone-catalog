@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro de Celulares</title>
+</head>
+<body>
+
+    <div id="logo">
+        <h1>Cadastro de Celulares</h1>
+        <img src="images/mobile-phone.png" alt="icon celular">
+    </div>
+
+    <form>
+        <label for="marca">Marca:</label>
+        <select name="marca" id="marca">
+            <option value="iphone">Iphone</option>
+            <option value="samsung">Samsung</option>
+            <option value="motorola">Motorola</option>
+            <option value="LG">LG</option>
+            <option value="Xiaomi">Xiaomi</option>
+            <option value="outra">Outra</option>
+        </select><br>
+
+        <label for="modelo">Modelo:</label>
+        <input type="text" name="modelo" id="modelo"><br>
+
+        <label for="cor">Cor:</label>
+        <input type="text" name="cor" id="cor"><br>
+
+        <label for="valor">Valor:</label>
+        <input type="number" name="valor" id="valor"><br>
+
+        <fieldset>
+            <legend>Condição:</legend>
+            <input type="radio" id="novo" name="condicao" value="novo">
+            <label for="novo">Novo</label>
+    
+            <input type="radio" id="usado" name="condicao" value="usado">
+            <label for="usado">Usado</label><br>
+        </fieldset>
+
+        <label for="infos">Demais Informações:</label><br>
+        <textarea name="infos" id="infos" cols="30" rows="10"></textarea><br>
+        
+        <button type="submit" id="salvar">Salvar</button>
+        <button type="button" id="voltar">Voltar</button>
+    </form>
+</body>
+</html>
